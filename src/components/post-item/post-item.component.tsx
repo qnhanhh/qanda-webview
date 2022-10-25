@@ -1,7 +1,7 @@
 import { InfoType } from "../../data/information";
 import Button from "../button/button.component";
-import PostDescription from "../post-description/post-description.component";
-import PostThumbnail from "../post-thumbnail/post-thumbnail.component";
+import PostReview from "../post-review/post-review.component";
+import PostBanner from "../post-banner/post-banner.component";
 
 import { PostItemContainer } from "./post-item.styles";
 
@@ -12,8 +12,8 @@ export type PostItemProps = {
 const PostItem = ({ props }: PostItemProps) => {
   return (
     <PostItemContainer>
-      <PostThumbnail props={props} />
-      <PostDescription props={props} />
+      <PostBanner props={props} />
+      <PostReview props={props} />
       <Button props={props} />
     </PostItemContainer>
   );

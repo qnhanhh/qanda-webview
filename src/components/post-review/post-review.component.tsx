@@ -1,16 +1,16 @@
 import {
-  DescriptionContainer,
+  ReviewContainer,
   TagList,
-  UserDescription,
+  UserContainer,
   UserInfo,
-  DescriptionTitle,
-  DescriptionText,
-} from "./post-description.styles";
+  ReviewTitle,
+  ReviewText,
+} from "./post-review.styles";
 import { ReactComponent as UserAvatar } from "../../assets/avatar.svg";
 import { ReactComponent as Dot } from "../../assets/dot.svg";
 import { PostItemProps } from "../post-item/post-item.component";
 
-const PostDescription = ({ props }: PostItemProps) => {
+const PostReview = ({ props }: PostItemProps) => {
   const {
     studentName,
     studentGrade,
@@ -20,27 +20,27 @@ const PostDescription = ({ props }: PostItemProps) => {
     hashtags,
   } = props;
   return (
-    <DescriptionContainer>
-      <UserDescription>
+    <ReviewContainer>
+      <UserContainer>
         <UserInfo>
           <UserAvatar />
           <span>{studentName}</span>
           <Dot />
           <span>{studentGrade}</span>
         </UserInfo>
-        <DescriptionText>{studyPeriod}</DescriptionText>
-      </UserDescription>
+        <ReviewText>{studyPeriod}</ReviewText>
+      </UserContainer>
       <div>
-        <DescriptionTitle>{reviewTitle}</DescriptionTitle>
-        <DescriptionText>{reviewBody}</DescriptionText>
+        <ReviewTitle>{reviewTitle}</ReviewTitle>
+        <ReviewText>{reviewBody}</ReviewText>
         <TagList>
           {hashtags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </TagList>
       </div>
-    </DescriptionContainer>
+    </ReviewContainer>
   );
 };
 
-export default PostDescription;
+export default PostReview;

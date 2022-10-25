@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ThumbnailContainer = styled.div`
+export const BannerContainer = styled.div`
   margin-bottom: 6px;
 
   & > img {

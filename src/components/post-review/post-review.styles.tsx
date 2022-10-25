@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DescriptionContainer = styled.div`
+export const ReviewContainer = styled.div`
   background-color: var(--white);
   border: 1px solid var(--grey);
   border-radius: 8px;
@@ -8,7 +8,7 @@ export const DescriptionContainer = styled.div`
   margin-bottom: 13px;
 `;
 
-export const UserDescription = styled.div`
+export const UserContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ export const UserInfo = styled.div`
   font-size: 15px;
 `;
 
-export const DescriptionTitle = styled.p`
+export const ReviewTitle = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -31,7 +31,7 @@ export const DescriptionTitle = styled.p`
   margin-bottom: 3px;
 `;
 
-export const DescriptionText = styled.p`
+export const ReviewText = styled.p`
   color: var(--light-text-color);
   font-weight: 400;
   font-size: 13px;
@@ -51,7 +51,7 @@ export const TagList = styled.ul`
   }
 
   & > li {
-    min-width: fit-content;
+    min-width: 79px;
     background-color: var(--blue);
     border-radius: 30px;
     padding: 4px 8px;
@@ -59,5 +59,6 @@ export const TagList = styled.ul`
     font-weight: 700;
     font-size: 11px;
     line-height: 16px;
+    text-align: center;
   }
 `;
