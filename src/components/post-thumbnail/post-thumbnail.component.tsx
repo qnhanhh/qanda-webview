@@ -1,10 +1,11 @@
-import thumbnail from "../../assets/postThumbnail.png";
+import { PostItemProps } from "../post-item/post-item.component";
 import { ThumbnailContainer } from "./post-thumbnail.styles";
 
-const PostThumbnail = () => {
+const PostThumbnail = ({ props }: PostItemProps) => {
+  const { teacherName, imageUrl } = props;
   return (
     <ThumbnailContainer>
-      <img src={thumbnail} alt=""></img>
+      <img src={`${imageUrl}`} alt={teacherName}></img>
     </ThumbnailContainer>
   );
 };
