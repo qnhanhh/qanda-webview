@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Logo from './components/logo/logo.component';
 import PostList from './components/post-list/post-list.component';
 
